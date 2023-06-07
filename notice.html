@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> 공지사항</title>
+        <script>
+            function winClose(){
+                ans = confirm("창을 닫겠습니까?");
+                if (ans){
+                    window.close();
+                }
+            }
+            function move_to(){
+                window.moveTo(20,20)
+            }
+            function move_by(){
+                window.moveBy(20,20)
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button" value="close the window" onclick="winClose()">
+        <input type="button" value="move to" onclick="move_to()">
+        <input type="button" value="move by" onclick="move_by()">
+        <input type="button" value="size to" onclick="winClose()">
+        <input type="button" value="size by" onclick="winClose()">
+    </body>
+</html>

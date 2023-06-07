@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body onload="displayTime();">
+    <div id="clock"></div>
+    <script>
+        function displayTime(){
+            let clock = document.getElementById("clock")
+
+            setInterval(function() {
+                today = new Date();
+                today = today.toLocaleString();
+                clock.innerHTML = today;
+
+            }, 1000)
+        }
+    </script>
+</body>
+</html>

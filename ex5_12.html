@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body onload="displayTime();">
+    <div id="clock"></div>
+    <script>
+        function displayTime(){
+            today = new Date();
+            today = today.toLocaleString();
+            let clock = document.getElementById("clock")
+            clock.style.backgroundColor = "yellow";
+            clock.innerHTML = today;
+            setTimeout("displayTime()", 1000);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+    </head>
+    <body>
+        <canvas id="myCanvas" width="300" height="300">
+        </canvas>
+        <script>
+            let cvs=document.getElementById("myCanvas")
+            let ctx= cvs.getContext("2d")
+            let img = new Image()
+            img.src = "flower.PNG"
+            img.height="1"
+            img.width="1"
+            img.onload = function(){
+                ctx.beginPath();
+                let pattern = ctx.createPattern(img, "repeat");
+                ctx.fillStyle = pattern;
+                ctx.arc(150,150,75,0,2*Math.PI, false);
+                ctx.fill();
+
+            }
+         
+            
+
+        </script>
+    </body>
+</html>

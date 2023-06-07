@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+    </head>
+    <body>
+        <canvas id="myCanvas">
+        </canvas>
+        <script>
+            let cvs=document.getElementById("myCanvas")
+            let ctx= cvs.getContext("2d")
+            cvs.width=300;
+            cvs.height=300;
+            cvs.style.backgroundColor="yellow";
+            ctx.lineWidth=3;
+            ctx.strokeStyle="blue";
+            ctx.fillStyle="green";
+            ctx.moveTo(100,100);
+            ctx.arc(100,100,50, 0, 270*Math.PI/180, true)
+            ctx.closePath();
+            ctx.setLineDash([5,4,3,2,1])
+            ctx.stroke();
+            
+
+        </script>
+    </body>
+</html>

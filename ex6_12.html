@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+    </head>
+    <body>
+        <canvas id="myCanvas">
+        </canvas>
+        <script>
+            let cvs=document.getElementById("myCanvas")
+            let ctx= cvs.getContext("2d")
+            cvs.width=300;
+            cvs.height=300;
+            cvs.style.backgroundColor="yellow";
+            ctx.lineWidth=3;
+            ctx.strokeStyle="blue";
+            ctx.fillStyle="green";
+            let gradient = ctx.createLinearGradient(0,0,150,150);
+            gradient.addColorStop(0, "red");
+            gradient.addColorStop(0.5, "yellow");
+            gradient.addColorStop(1, "blue");
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0,0,150,150);
+         
+            
+
+        </script>
+    </body>
+</html>

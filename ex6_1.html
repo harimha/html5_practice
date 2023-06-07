@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>캔버스 작업의 기본 형태</title>
+</head>
+    <body>
+        <canvas id = "myCanvas" width = "350" height = "200"
+                style="background-color: yellow;">
+        </canvas>
+    </body>
+    <script>
+        let cvs = document.getElementById("myCanvas");
+        let ctx = cvs.getContext("2d");
+        ctx.font="20px 굴림체"
+        ctx.fillStyle ="red";
+        ctx.fillText("캔버스", cvs.width/2-70, cvs.height/2-5);
+        
+    </script>
+</html>

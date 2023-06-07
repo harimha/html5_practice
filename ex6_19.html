@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+    </head>
+    <body>
+        <canvas id="myCanvas" width="3000" height="3000">
+        </canvas>
+        <script>
+            let cvs=document.getElementById("myCanvas")
+            let ctx= cvs.getContext("2d")
+            ctx.font = "30pt 궁서체";
+            ctx.strokeText("HTML5 캔버스", 150, 150);
+            ctx.textAlign="left";
+            ctx.textBaseline="top";
+            ctx.fillStyle="blue";
+            ctx.fillText("HTML5 캔버스", 150, 150);
+            ctx.textAlign="right";
+            ctx.textBaseline="bottom";
+            ctx.fillStyle="red";
+            ctx.fillText("HTML5 캔버스", 150, 150);
+            ctx.beginPath();
+            ctx.moveTo(150,0);
+            ctx.lineTo(150,1500);
+            ctx.stroke();
+            ctx.moveTo(150,0);
+            ctx.lineTo(150,1500);
+            ctx.stroke();
+            ctx.moveTo(0,150);
+            ctx.lineTo(1500,150);
+            ctx.stroke();
+            
+
+        </script>
+    </body>
+</html>

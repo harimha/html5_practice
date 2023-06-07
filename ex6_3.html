@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+    </head>
+    <body>
+        <canvas id="myCanvas">
+        </canvas>
+        <script>
+            let cvs=document.getElementById("myCanvas")
+            let ctx= cvs.getContext("2d")
+            cvs.width=300;
+            cvs.height=300;
+            cvs.style.backgroundColor="yellow";
+            ctx.lineWidth=3;
+            ctx.strokeStyle="blue";
+            ctx.fillStyle="green";
+            ctx.beginPath();
+            ctx.moveTo(50,50);
+            ctx.lineTo(200,200);
+            ctx.lineTo(200,50);
+            ctx.closePath();
+            
+            ctx.stroke();
+            ctx.beginPath();
+
+            ctx.rect(50,50,100,100);
+            ctx.fill();
+        </script>
+    </body>
+</html>
