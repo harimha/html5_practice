@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <script>
+        function save_val(){
+            let con_name = document.getElementById("concept_name").value;
+            let description = document.getElementById("description").value;
+            alert(con_name+" : "+description);
+        }
+    </script>
+    <head>
+        <title>input_window</title>
+    </head>
+    <body>
+        <form id="myForm">
+            개념 : <input type="text" id="concept_name"><br><hr>
+            내용 : <textarea id="description"></textarea><br>
+            <input type="button" value="저장하기" onclick="save_val()">
+        </form>
+    </body>
+</html>

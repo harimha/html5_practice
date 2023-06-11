@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        div {width:400px; background:lightgreen;}
+    
+    </style>
+    <script>
+        function print(){
+            let msg = prompt("아무말 입력");
+            let my_div = document.getElementById("main");
+            my_div.innerHTML = msg;
+
+        }
+    </script>
+    <head>
+
+    </head>
+    <body>
+        <div id="main">text</div>
+        <input type="button" value="click here" onclick="print()">
+    </body>
+</html>
